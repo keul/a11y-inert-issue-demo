@@ -28,7 +28,8 @@ legend {
   margin-bottom: 1rem;
 }
 
-section[inert] {
+section[inert],
+.inert {
   opacity: 0.6;
   color: #777;
 }
@@ -62,4 +63,13 @@ button[type="submit"][disabled] {
 /* This is only used by the second demo */
 .inert {
   pointer-events: none;
+}
+
+.next-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  text-decoration: underline;
+  color: blueviolet;
+  cursor: pointer;
 }
