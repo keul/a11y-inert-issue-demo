@@ -1,0 +1,65 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+legend {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.horizontal-fields {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+section[inert] {
+  opacity: 0.6;
+  color: #777;
+}
+
+button[type="submit"] {
+  padding: 0.2rem 0.7rem;
+  background-color: #007bff;
+  border: 1px solid #004895;
+  border-radius: 4px;
+  color: white
+}
+
+button[type="submit"][disabled] {
+  background-color: #8cb3de;
+  cursor: not-allowed;
+}
+
+/* taken from https: //tailscan.com/tailwind/accessibility/sr-only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* This is only used by the second demo */
+.inert {
+  pointer-events: none;
+}
